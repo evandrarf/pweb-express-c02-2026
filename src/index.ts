@@ -26,11 +26,12 @@ app.get("/", (_req, res) => {
   res.json({
     status: true,
     message: "MLBB Shop Backend API",
-    endpoints: {
-      health: "/health",
-      heroes: "/api/heroes",
-      skins: "/api/skins",
-    },
+      endpoints: {
+        health: "/health",
+        heroes: "/api/heroes",
+        skins: "/api/skins",
+        players: "/api/players",
+      },
   });
 });
 
