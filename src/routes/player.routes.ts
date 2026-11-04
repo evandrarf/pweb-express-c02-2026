@@ -6,6 +6,7 @@ import {
   deletePlayer,
   topUpPlayer,
   matchPlayer,
+  buyHero,
 } from "../controllers/playerController";
 
 const router = Router();
@@ -19,5 +20,8 @@ router.delete("/:player_id", deletePlayer);
 // fitur 5: top up and match routes
 router.post("/:player_id/topup", topUpPlayer);
 router.post("/:player_id/matches", matchPlayer);
+
+// fitur 6: buy hero route
+router.post("/:player_id/heroes", buyHero);
 
 export default router;
