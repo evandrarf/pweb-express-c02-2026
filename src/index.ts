@@ -31,6 +31,7 @@ app.get("/", (_req, res) => {
         heroes: "/api/heroes",
         skins: "/api/skins",
         players: "/api/players",
+        statistics: "/api/statistics",
       },
   });
 });
